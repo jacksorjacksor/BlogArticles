@@ -1,0 +1,16 @@
+# Submitting a form in ASP.NET Core
+
+Here's the smallest razor snippet I could make for making, submitting and viewing a form in a razor page.
+
+`
+<form method="get">
+    <div>
+        <input type="text" name="searchGenre" value="" />
+        <input type="Submit" value="Submit" /><br/>
+    </div>
+</form>
+
+<h1>@Request.Query["searchGenre"]</h1>
+`
+
+
